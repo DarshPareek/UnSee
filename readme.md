@@ -9,8 +9,8 @@
 <div>Use the following commands : </div>
 <pre>
 <code>git clone https://github.com/DarshPareek/UnSee
-  cd UnSee
-  cmake --build .</code>
+cd UnSee
+cmake --build .</code>
 </pre>
 <div>This Should generate a file(executable) named UnSee <br> To run it :</div>
 <pre><code>./UnSee</code></pre>
@@ -18,7 +18,8 @@
 <br>
 <h1>2. Release....</h1>
 <div>You can directly download <code>program.o</code> from the releases and run it using the following commands : </div>
-<pre><code>chmod +x program.o<br>./program.o</code></pre>
+<pre><code>chmod +x program.o
+./program.o</code></pre>
 <h1>3. About Source Files </h1>
 <div><code>main.cpp</code> : contains the basic loop to spare you from re-running the executable again and again for different images and blur strengths also makes calls to <code>fastGauss.cpp</code>.<br><br><code>fastGauss.cpp</code> : accepts the image path and blur strength from <code>main.cpp</code> and does all the crazy math that is required to do a <a href = "https://en.wikipedia.org/wiki/Gaussian_blur">Gaussian Blur</a>. I implemented <a href = "https://blog.ivank.net/fastest-gaussian-blur.html">this</a> js-version into C++. Call me crazy but this is way faster from what OpenCV provides and there is still scope for heavy optimization in my code.<br><br><code>CMakeList.txt</code> : contains the bare-minimum stuff to build this project. It links OpenCV libraries and does a whole lot of other stuff.</div>
 

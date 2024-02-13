@@ -8,7 +8,9 @@
 <h2>&emsp; 2. Actual Building and Running:</h2>
 <div>Use the following commands : </div>
 <pre>
-<code>git clone https://github.com/DarshPareek/UnSee <br>cd UnSee <br>cmake --build .</code>
+<code>git clone https://github.com/DarshPareek/UnSee
+  cd UnSee
+  cmake --build .</code>
 </pre>
 <div>This Should generate a file(executable) named UnSee <br> To run it :</div>
 <pre><code>./UnSee</code></pre>
